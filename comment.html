@@ -1,0 +1,60 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Travel Comment and Recommendation</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&display=swap" rel="stylesheet">
+  <link href="commentcss.css" rel="stylesheet" type="text/css">
+</head>
+
+<body style="background-image:url('https://wallpapers.com/images/featured/world-map-desktop-377awf240ap812jp.jpg');background-attachment: fixed; background-repeat: no-repeat;background-size: cover;"> 
+  <div class="navbar">
+    <div class="logo"><a>Travel</a></div>
+    <ul>
+      <li><a href="main pagejs.html">Home</a></li>
+      <li>
+        <a>Select Country</a>
+        <div class="dropdown">
+          <a href="egypt.html">Egypt</a>
+          <a href="holland.html">Holland</a>
+          <a href="Japan.html">Japan</a>
+          <a href="Australia.html">Australia</a>
+        </div>
+      </li>
+      <li>
+        <a>Helping center</a>
+        <div class="dropdown">
+          <a href="advise.html">Advise</a>
+          <a href="comment.html">Comment</a>
+        </div>
+      </li>
+      <li><a href="signin.html">Sign in</a></li>
+    </ul>
+  </div>
+
+  <p class="ctitle">Travel Planner</p>
+  <div class="cdiv80">
+
+    <!-- User Comment Section -->
+    <div class="comment-section">
+      <h2>Leave Your Comment</h2>
+      <textarea id="userComment" placeholder="What do you think about the destination?"></textarea>
+      <button onclick="submitComment()">Submit</button>
+    </div>
+
+    <!-- ChatGPT Response Section -->
+    <div class="response-section">
+      <h2>ChatGPT Recommendations</h2>
+      <div id="response" class="response">No response yet.</div>
+    </div>
+
+  </div>
+
+  <script src="commentscript.js"></script>
+  <script src="Node.js"></script>
+</body>
+</html>
+
+
